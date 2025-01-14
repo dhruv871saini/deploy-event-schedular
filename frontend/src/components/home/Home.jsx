@@ -28,7 +28,7 @@ const Home = () => {
     };
 
   const handleSubmit = (e) => {
-    // e.preventDefault();
+    e.preventDefault();
     // console.log('Form Data:', formData);
     if(!formData.names||!formData.location||!formData.description||!formData.time||!formData.date||!formData.category){
        return toast.error("All field required")
@@ -44,6 +44,7 @@ const Home = () => {
       .then((response)=>{
         if(response.request.status===200){          
           toast.success('Event added Successfullly');
+          
         }
       })
       console.log(res)
