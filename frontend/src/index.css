@@ -1,0 +1,23 @@
+
+.bg-img{
+  background-image: url("/public/gallery/pexels-pixabay-531880.jpg");
+  background-size:200vh;
+
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100vw;
+}
+.form-container {
+  background: rgba(0, 0, 0, 0.7);  /* Dark transparent form background */
+}
+.hiddenoverflow {
+  height: 70vh;       /* Set the height of the container */
+  overflow-y: auto;   /* Enable vertical scrolling */
+  overflow-x: hidden; /* Hide horizontal scroll if any */
+  border: 1px solid #ccc; /* Optional border for visibility */
+  padding: 10px;      /* Optional padding for better appearance */
+}
+.padd{
+  padding-left: 50%;
+}
