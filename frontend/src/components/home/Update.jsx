@@ -20,7 +20,7 @@ const Update = () => {
   useEffect(() => {
     const datas=localStorage.getItem("token")
 
-    axios.get(`${process.env.REACT_APP_LOCAL_HOST}}/api/v1/events`,{
+    axios.get(`${process.env.REACT_APP_LOCAL_HOST}/api/v1/events`,{
       headers:{
         Authorization:`Bearer ${datas}`
       }
