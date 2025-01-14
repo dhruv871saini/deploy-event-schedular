@@ -14,7 +14,7 @@
 .hiddenoverflow {
   height: 70vh;       /* Set the height of the container */
   overflow-y: auto;   /* Enable vertical scrolling */
-  overflow-x: hidden; /* Hide horizontal scroll if any */
+   /* Hide horizontal scroll if any */
   border: 1px solid #ccc; /* Optional border for visibility */
   padding: 10px;      /* Optional padding for better appearance */
 }
