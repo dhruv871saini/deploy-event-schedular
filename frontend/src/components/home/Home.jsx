@@ -36,7 +36,7 @@ const Home = () => {
     try {
       const datas=localStorage.getItem("token")
       console.log(datas)
-      const res =axios.post("http://localhost:2004/api/v1/events",formData,{
+      const res =axios.post(`${process.env.LOCAL_HOST}/api/v1/events`,formData,{
         headers:{
           Authorization:`Bearer ${datas}`
         }

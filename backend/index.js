@@ -20,7 +20,7 @@ app.use(express.json());
 // cors ka use security purpose ke liye karte hai  ye ek url ke liye hi server run karta hai
 
 const corsOption={
-  origin:"http://localhost:3000",
+  origin:"https://deploy-event-schedular.onrender.com",
   credential:true,
 }
 

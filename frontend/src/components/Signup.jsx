@@ -22,7 +22,7 @@ const Signup = () => {
 
     try {
 
-      const res = await axios.post('http://localhost:2004/api/v1/signup', user);
+      const res = await axios.post('${process.env.LOCAL_HOST}/api/v1/signup', user);
       console.log("dhjh",res);
       if (res.status===201) {
         toast.success('Successfully Signed Up');

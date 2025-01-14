@@ -46,7 +46,7 @@ const Update = () => {
     if (editIndex !== null) {
       const datas=localStorage.getItem("token")
 
-      axios.patch(`http://localhost:2004/api/v1/events/${data[editIndex]._id}`, formData,{
+      axios.patch(`${process.env.LOCAL_HOST}/api/v1/events/${data[editIndex]._id}`, formData,{
         headers:{
           Authorization:`Bearer ${datas}`
         }
@@ -83,7 +83,7 @@ const Update = () => {
     const datas=localStorage.getItem("token")
 
     const eventId = data[index]._id;
-    axios.delete(`http://localhost:2004/api/v1/events/${eventId}`,{
+    axios.delete(`${process.env.LOCAL_HOST}/api/v1/events/${eventId}`,{
       headers:{
         Authorization:`Bearer ${datas}`
       }
