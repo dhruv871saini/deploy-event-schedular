@@ -22,8 +22,7 @@ const Signup = () => {
 
     try {
 
-      const res = await axios.post('${process.env.LOCAL_HOST}/api/v1/signup', user);
-      console.log("dhjh",res);
+      const res = await axios.post(`${process.env.REACT_APP_LOCAL_HOST}/api/v1/signup`, user);
       if (res.status===201) {
         toast.success('Successfully Signed Up');
         navigate('/');

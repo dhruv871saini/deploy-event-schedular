@@ -15,7 +15,7 @@ const navigate= useNavigate()
 const handleSubmit= async(e)=>{
   e.preventDefault();
   try {
-    await axios.post(`${process.env.LOCAL_HOST}/api/v1/login`,user)
+    await axios.post(`${process.env.REACT_APP_LOCAL_HOST}/api/v1/login`,user)
     .then((response)=>{
       console.log(response)
     const token = response.data.token;
