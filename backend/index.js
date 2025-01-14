@@ -38,7 +38,7 @@ app.use("/api/v1", userRouter);
 
 cron.schedule("*/1 * * * *", async () => {
   try {
-    console.log("Running scheduler task to check events every minute");
+    // console.log("Running scheduler task to check events every minute");
     const currentDate = new Date();
 
     const events = await eventModel.find();
