@@ -19,14 +19,14 @@ const handleSubmit= async(e)=>{
     .then((response)=>{
       console.log(response)
     const token = response.data.token;
-    if(response.request.status===200){
       localStorage.setItem('token',token)      
-      toast.success('Successfully logged in');
+      toast.success(response.data.message);
       navigate('/home');
-    }
+    
   })
   } catch (error) {
     console.log(error)
+    toast.error(error.response.data.message)
   }
 }
   return (

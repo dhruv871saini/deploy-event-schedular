@@ -47,7 +47,7 @@ const sendEmail = async (eventid) => {
                 <p><b>Time:</b> ${time}</p>
                 <p><b>Location:</b> ${location}</p>
                 <p><b>Description:</b> ${description}</p>
-                <p><b>Category:</b> ${category}</p>
+                 <p><b>Category:</b> ${category}</p>
             `,
     };
 
