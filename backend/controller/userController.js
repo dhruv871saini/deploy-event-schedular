@@ -28,7 +28,7 @@ const sendMailMiddleware = async (id) => {
       to: verifyid.userEmail,
       subject: "Verification Mail",
       html: `<p>Click on the link to verify your email account: <br>
-      <a href="http://localhost:2004/api/v1/verified/${verifyid.userEmail}/token/${verificationToken}">Click here for verification</a></p>`
+      <a href="https://deploy-event-schedular.onrender.com/api/v1/verified/${verifyid.userEmail}/token/${verificationToken}">Click here for verification</a></p>`
     }
     const info = await transporter.sendMail(mailOptions)
     console.log(info.messageId)
