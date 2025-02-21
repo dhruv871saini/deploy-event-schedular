@@ -21,7 +21,7 @@ const sendMailMiddleware = async (id) => {
     const verificationToken= crypto.randomBytes(32).toString("hex")
     const tokenExpire= Date.now()+5*60*1000;
     verifyid.verificationToken=verificationToken;
-    verifyid.tokenExpire-tokenExpire;
+    verifyid.tokenExpire=tokenExpire;
     await verifyid.save()
     const mailOptions = {
       from: "Verification Mail <dhruvsystemchnm@gmail.com>",
